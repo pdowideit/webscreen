@@ -1,6 +1,6 @@
-"websnap" ist ein Tool mit dess Hilfe Screenshots von beliebigen Webseiten in beliebigen Intervallen aufgenommen werden können. Täglich kann dann zu einer gewählten Uhrzeit ein Video aus diesen Screenshots generiert werden, wobei auf hier nur gewisse Screenshots ausgewählt werden können.
+"webscreen" ist ein Tool mit dess Hilfe Screenshots von beliebigen Webseiten in beliebigen Intervallen aufgenommen werden können. Täglich kann dann zu einer gewählten Uhrzeit ein Video aus diesen Screenshots generiert werden, wobei auf hier nur gewisse Screenshots ausgewählt werden können.
 
-Zur Ausführung von "websnap" sind the folgenden Linux-Tools notwendig:
+Zur Ausführung von "webscreen" sind the folgenden Linux-Tools notwendig:
 	
 	sudo apt install npm
 	sudo apt install nodejs-legacy
@@ -8,13 +8,13 @@ Zur Ausführung von "websnap" sind the folgenden Linux-Tools notwendig:
 	sudo apt-get install imagemagick imagemagick-doc
 	sudo apt-get install ffmpeg
 
-Von nun an kann "websnap" mit dem Kommandozeilenaufruf 
+Von nun an kann "webscreen" mit dem Kommandozeilenaufruf 
 
-	bash websnap.sh settings.txt
+	bash webscreen.sh settings.txt
 
 gestartet werden.
 
-Das Skript erwartet eine Einstellungsdatei in den Argumenten. Eine solche Datei liegt im Git (https://github.com/pdowideit/websnap) dem Bash Skript bei. Die Syntax in dieser Datei lautet:
+Das Skript erwartet eine Einstellungsdatei in den Argumenten. Eine solche Datei liegt im Git (https://github.com/pdowideit/webscreen) dem Bash Skript bei. Die Syntax in dieser Datei lautet:
 
 PATH: Der Name des Ordners unter dem die Ordnerstruktur (days, films, log, montages) erstellt wird. Lautet PATH zum Beispiel "data" und die Skriptdatei unter "~/" so wird ein Ordner unter "~/data" erstellt, der die Dateien beinhaltet.
 URLS: Sind die URLS der Webseiten von denen Screenshots gemacht werden sollen. Hier kann ebenfalls die Bearbeitung der Screenshots eingestellt werden: URL>HÖHExBREITE+VERSCHIEBUNGHORIZONTAL+VERSCHIEBUNGVERTIKAL
@@ -27,10 +27,9 @@ Damit "websnap" nun regelmäßig aufgerufen wird, wird ein "crontab" verwendet, 
 	
 	SHELL=/bin/bash
 	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin
-	* * * * * bash YOURWEBSNAPPATH/websnap.sh YOURSETTINGSPATH/settings.txt
+	* * * * * bash YOURWEBSCREENPATH/webscreen.sh YOURSETTINGSPATH/settings.txt
 
 Nun ist die Anwendung fertig konfiguriert und nimmt im, von Ihnen gewünschten Intervall, Screenshots der gewählten Webseiten auf.
 
 
 
-Autor: Paul Dowideit
