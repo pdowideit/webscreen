@@ -1,0 +1,6 @@
+PATH data
+URLS spiegel.de>900x1800+125+10;welt.de>972x1800+414+0;zeit.de>980x1800+410+89;faz.net>962x1800+419+97;handelsblatt.com>980x1800+330+0;n-tv.de>1023x1800+290+100;manager-magazin.de>900x1800+120+35;ft.com>1190x1800+310+240;businessinsider.de>960x1800+420+0;sz.de>942x1800+437+0
+TIME 09
+INTERVALL 10
+FILM 0;3;4;9
+DURATION 2
